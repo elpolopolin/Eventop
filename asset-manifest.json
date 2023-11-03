@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Eventop/static/css/main.ebfc3a0f.css",
-    "main.js": "/Eventop/static/js/main.5f703b9a.js",
+    "main.js": "/Eventop/static/js/main.bdf14369.js",
     "static/js/787.2132b845.chunk.js": "/Eventop/static/js/787.2132b845.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/Eventop/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/Eventop/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
@@ -13,11 +13,11 @@
     "static/media/Calendario2.png": "/Eventop/static/media/Calendario2.69a90de4e11881080f96.png",
     "index.html": "/Eventop/index.html",
     "main.ebfc3a0f.css.map": "/Eventop/static/css/main.ebfc3a0f.css.map",
-    "main.5f703b9a.js.map": "/Eventop/static/js/main.5f703b9a.js.map",
+    "main.bdf14369.js.map": "/Eventop/static/js/main.bdf14369.js.map",
     "787.2132b845.chunk.js.map": "/Eventop/static/js/787.2132b845.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ebfc3a0f.css",
-    "static/js/main.5f703b9a.js"
+    "static/js/main.bdf14369.js"
   ]
 }
