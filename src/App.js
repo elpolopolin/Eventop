@@ -27,6 +27,8 @@ export const UsuarioContext = createContext();
 export const HostContext = createContext(); 
 
 const host = "https://polo.relied.cloud/"; //en ort cambiar ip por localhost..
+//const rootPath = ""; //en ort cambiar ip por localhost..
+const rootPath = "/Eventop"; //en ort cambiar ip por localhost..
 
 function App() {
   const [eventos, setEventos] = useState([]);
@@ -224,21 +226,21 @@ function App() {
             </div>
             )}
             <Routes>
-            <Route path="/"  element={<Index />}/>
-              <Route path="/eventos" element={<Eventos eventos={eventos} />} />
-              <Route path="/Categoria/:id" element={<VerXcategoria cargarUsuario={cargarUsuario}/>} />
-              <Route path="/index" element={<Index />} />
-              <Route path="/categorias" element={<Categorias cargarUsuario={cargarUsuario}/>} />
-              <Route path="/eventos/VerEvento/:id" element={<MostrarEventoWrapper eventos={eventos} participantes={participantes} />} />
-              <Route path="/CrearEvento" element={<CrearEvento cargarUsuario={cargarUsuario}/>} />
-              <Route path="/friends" element={<Friends />} />
-              <Route path="/profile" element={<Profile logout={logout} cargarUsuario={cargarUsuario} />} />
-              <Route path="/entradas" element={<Entradas />} />
-              <Route path="/EventosUsuario" element={<EventosDeUsuario cargarUsuario={cargarUsuario}/>} />
-              <Route path="/comprar/evento/:id" element={<Comprar />} />
-              <Route path="/comentarios/:id" element={<Comentarios />}  />
-              <Route path="/QrScanner" element={<QrScanner />}  />
-              <Route path="/EditarEvento/:id" element={<EditarEvento cargarUsuario={cargarUsuario}/>} />
+            <Route path={`${rootPath}/`}  element={<Index />}/>
+              <Route path={`${rootPath}/eventos`} element={<Eventos eventos={eventos} />} />
+              <Route path={`${rootPath}/Categoria/:id`}element={<VerXcategoria cargarUsuario={cargarUsuario}/>} />
+              <Route path={`${rootPath}/index`} element={<Index />} />
+              <Route path={`${rootPath}/categorias`} element={<Categorias cargarUsuario={cargarUsuario}/>} />
+              <Route path={`${rootPath}/eventos/VerEvento/:id`} element={<MostrarEventoWrapper eventos={eventos} participantes={participantes} />} />
+              <Route path={`${rootPath}/CrearEvento`} element={<CrearEvento cargarUsuario={cargarUsuario}/>} />
+              <Route path={`${rootPath}/friends`} element={<Friends />} />
+              <Route path={`${rootPath}/profile`} element={<Profile logout={logout} cargarUsuario={cargarUsuario} />} />
+              <Route path={`${rootPath}/entradas`} element={<Entradas />} />
+              <Route path={`${rootPath}/EventosUsuario`} element={<EventosDeUsuario cargarUsuario={cargarUsuario}/>} />
+              <Route path={`${rootPath}/comprar/evento/:id`} element={<Comprar />} />
+              <Route path={`${rootPath}/comentarios/:id`} element={<Comentarios />}  />
+              <Route path={`${rootPath}/QrScanner`} element={<QrScanner />}  />
+              <Route path={`${rootPath}/EditarEvento/:id`} element={<EditarEvento cargarUsuario={cargarUsuario}/>} />
               <Route path="*" element={<h1 className="text-white">Error</h1>}  />
             </Routes>
 
