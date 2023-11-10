@@ -1,5 +1,4 @@
 {
-  "homepage": "http://elpolopolin.github.io/Eventop",
   "name": "nombre-del-proyecto",
   "version": "0.1.0",
   "private": true,
@@ -17,7 +16,6 @@
     "dayjs": "^1.11.9",
     "feather-icons-react": "^0.6.2",
     "font-awesome": "^4.7.0",
-    "gh-pages": "^6.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.0",
@@ -26,8 +24,6 @@
   },
   "scripts": {
     "start": "npm run watch:css && react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
